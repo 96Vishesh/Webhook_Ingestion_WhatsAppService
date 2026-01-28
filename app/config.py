@@ -15,15 +15,13 @@ class Settings:
     
     @property
     def db_path(self) -> str:
-        """Extract the SQLite file path from DATABASE_URL."""
         # Handle sqlite:////data/app.db format
         url = self.database_url
         if url.startswith("sqlite:///"):
-            return url[10:]  # Remove "sqlite:///"
+            return url[10:]
         return url
     
     def is_ready(self) -> bool:
-        """Check if all required configuration is present."""
         return bool(self.webhook_secret)
 
 
