@@ -218,7 +218,3 @@ PyCharm + Claude AI
 
 Vishesh Srivastava
 
-
-For the LyftrAI Backend Assesment test
-
-Completed on 28th January 2026 (10:02 am)
